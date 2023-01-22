@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    background: url('./img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+
+    
+}
+.card{
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: all ease-in-out 2s;
+    border-radius: 20px;
+    
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.front{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.47);
+    position: absolute;
+    backface-visibility: hidden;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.47);
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    /* padding: 10px; */
+}
+
+.back p{
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+.black{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    margin-top: 40px;
+}
+.cvv{
+    width: 90%;
+    height: 40px;
+    background-color: white;
+    margin: 5px 5px;
+}
+.cvv p{
+    text-align: right;
+    padding-top: 14px;
+    color: rgb(19, 19, 19);
+    height: 100%;
+    font-size: 16px;
+}
+.cnum{
+    display: flex; 
+    justify-content: space-between; 
+    margin: 10px 0px;
+    font-size: 1.5rem;
+    color: white;
+}
+.buttom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
